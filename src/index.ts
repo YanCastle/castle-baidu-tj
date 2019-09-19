@@ -60,6 +60,13 @@ export function order(id: string, total: number, items: item[]) {
     }])
 }
 /**
+ * 跟踪用户
+ * @param user_id 
+ */
+export function user(user_id: string | number) {
+    window._hmt.push(['setUser', user_id])
+}
+/**
  * 商品信息
  */
 export class item {
